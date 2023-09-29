@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Unreal Engine UPROPERTY</Title>
+			<Author>SocialHermit</Author>
+			<Shortcut>uprop</Shortcut>
+			<Description>Quickly add in a new Unreal Engine UPROPERTY</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CPP">
+				<![CDATA[UPROPERTY($Metadata$)
+				$Type$ $Name$ = $DefaultValue$;$end$]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Metadata</ID>
+					<ToolTip>Define the UPROPERTY's metadata (Default: EditAnywhere)</ToolTip>
+					<Default>EditAnywhere</Default>
+				</Literal>
+				<Literal>
+					<ID>Type</ID>
+					<ToolTip>Define the property type (Default: float)</ToolTip>
+					<Default>float</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Define the property name (Default: MyProperty)</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+				<Literal>
+					<ID>DefaultValue</ID>
+					<ToolTip>Define the properties default value. (Default: 0)</ToolTip>
+					<Default>0</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

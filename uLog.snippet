@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Unreal Engine Log</Title>
+			<Author>SocialHermit</Author>
+			<Shortcut>ulog</Shortcut>
+			<Description>Quickly add in a UE_LOG call</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CPP">
+				<![CDATA[UE_LOG(LogTemp, $Level$, TEXT("$Message$")$Args$);$end$]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Level</ID>
+					<ToolTip>Choose a log level. (Default: Display)</ToolTip>
+					<Default>Display</Default>
+				</Literal>
+				<Literal>
+					<ID>Message</ID>
+					<ToolTip>Input a Message! (Default: Message)</ToolTip>
+					<Default>Message</Default>
+				</Literal>
+				<Literal>
+					<ID>Args</ID>
+					<ToolTip>Optional: Enter any args! (Default: None)</ToolTip>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

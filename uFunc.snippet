@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Unreal Engine UFUNCTION</Title>
+			<Author>SocialHermit</Author>
+			<Shortcut>ufunc</Shortcut>
+			<Description>Quickly add in a Unreal Engine UFUNCTION</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CPP">
+				<![CDATA[UFUNCTION($Metadata$)
+				$Type$ $Name$($Arguments$);$end$]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Metadata</ID>
+					<ToolTip>Define the UFUNCTION's metadata (Default: BlueprintCallable)</ToolTip>
+					<Default>BlueprintCallable</Default>
+				</Literal>
+				<Literal>
+					<ID>Type</ID>
+					<ToolTip>Define the functions return type (Default: void)</ToolTip>
+					<Default>void</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Define the functions name (Default: MyFunction)</ToolTip>
+					<Default>MyFunction</Default>
+				</Literal>
+				<Literal>
+					<ID>Arguments</ID>
+					<ToolTip>Add any desired arguments to the function (Default: None)</ToolTip>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

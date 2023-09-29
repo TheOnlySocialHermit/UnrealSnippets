@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>C++ ForEach Loop</Title>
+			<Author>SocialHermit</Author>
+			<Shortcut>ueach</Shortcut>
+			<Description>Add a proper C++ ForEach Loop (Tailored for Unreal Engine Use)</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CPP">
+				<![CDATA[for ($Type$ $Name$ : $Collection$)
+				{
+					$end$
+				}]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Type</ID>
+					<ToolTip>Define the Collection type (Default: AActor*)</ToolTip>
+					<Default>AActor*</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Define the accessed name (Default: Item)</ToolTip>
+					<Default>Item</Default>
+				</Literal>
+				<Literal>
+					<ID>Collection</ID>
+					<ToolTip>Define the Collection to be accessed. (Default: Collection)</ToolTip>
+					<Default>Collection</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
