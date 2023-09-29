@@ -12,7 +12,9 @@ Don't know how to use a snippet? They are easy to use, and awesome for improving
 
 Don't know how to get snippets into your Visual Studio Editor? Thats OK i'll walk you through it!
 
-First go ahead and download the .zip of this repo anywhere you wish onto your computer. Then extract that zip file also where ever you like.
+First go ahead and download the .zip of this repo anywhere you wish onto your computer. 
+Then Go into that .zip file and copy the 'UnrealSnippets' folder into any folder you wish.
+After that, if you want you can delete the .zip file.
 Keep note where you put the extracted folder as this is important for when it comes time to put the snippets into the editor.
 
 I know of Three ways to do this personally, and i'll cover all three of them!
