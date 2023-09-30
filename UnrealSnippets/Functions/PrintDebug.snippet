@@ -9,7 +9,8 @@
 		</Header>
 		<Snippet>
 			<Code Language="CPP">
-				<![CDATA[GEngine->AddOnScreenDebugMessage($Key$, $Time$, $Color$, TEXT($Message$));$end$]]>
+				<![CDATA[GEngine->AddOnScreenDebugMessage($Key$, $Time$, FColor::$Color$, 
+				FString::Printf(TEXT($Message$)$Args$));$end$]]>
 			</Code>
 			<Declarations>
 				<Literal>
@@ -25,11 +26,16 @@
 				<Literal>
 					<ID>Color</ID>
 					<ToolTip>The color to display the text in.</ToolTip>
-					<Default>FColor::Red</Default>
+					<Default>Red</Default>
 				</Literal>
 				<Literal>
 					<ID>Message</ID>
 					<ToolTip>The message to display.</ToolTip>
+					<Default></Default>
+				</Literal>
+				<Literal>
+					<ID>Args</ID>
+					<ToolTip>OPTIONAL: Add any optional additional arguments to the message</ToolTip>
 					<Default></Default>
 				</Literal>
 			</Declarations>
