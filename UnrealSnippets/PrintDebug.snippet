@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Unreal Engine On Screen Debug Message</Title>
+			<Author>SocialHermit</Author>
+			<Shortcut>uprint</Shortcut>
+			<Description>Quickly add in a new Unreal Engine On Screen Debug Message</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CPP">
+				<![CDATA[GEngine->AddOnScreenDebugMessage($Key$, $Time$, $Color$, TEXT($Message$));$end$]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Key</ID>
+					<ToolTip>A unique key to prevent the same message from being added multiple times.</ToolTip>
+					<Default>INDEX_NONE</Default>
+				</Literal>
+				<Literal>
+					<ID>Time</ID>
+					<ToolTip>How long to display the message, in seconds.</ToolTip>
+					<Default>5</Default>
+				</Literal>
+				<Literal>
+					<ID>Color</ID>
+					<ToolTip>The color to display the text in.</ToolTip>
+					<Default>FColor::Red</Default>
+				</Literal>
+				<Literal>
+					<ID>Message</ID>
+					<ToolTip>The message to display.</ToolTip>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
